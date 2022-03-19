@@ -4,7 +4,7 @@ import React from 'react';
 export default function AboutPage() {
 
     return (
-        <div className='h-screen snap-center bg-blue-900'>
+        <div className='h-screen snap-center bg-blue-900 text-blue-50'>
             <h1 className="text-[128px] font-display flex justify-center">
                 weike qu
             </h1>
