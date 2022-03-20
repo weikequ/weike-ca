@@ -1,11 +1,8 @@
 
 .backBar {
     background: linear-gradient(transparent 0%, transparent 50%, #fff 50%, #fff 100%);
-    padding-top: 20px;
-    margin: auto;
-	position: relative;
-	width: 11px;
-	height: 100px;
+	width: 7px;
+	height: 130px;
 	border-radius: 100px;
     background-size: 100% 200%;
 	animation: colorSlide 3s ease-out infinite, nudgeBar 3s ease-out infinite;
@@ -13,14 +10,14 @@
 
  @keyframes colorSlide {
     0% {
-		 background-position: 0% 100%;
+		background-position: 0% 100%;
 	}
     50% {
         background-color: #043540;
 		background-position: 0% 0%;
 	}
 	100% {
-		 background-position: 0% 0%;
+		background-position: 0% 0%;
 	}
 }
 
