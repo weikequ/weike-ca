@@ -6,7 +6,7 @@ import cvSVG from '../../media/cv.svg';
 export const iconType = {
     li: [liSVG, 'https://www.linkedin.com/in/weikequ/'],
     gh: [ghSVG, 'https://github.com/weikequ'],
-    cv: [cvSVG, '']
+    cv: [cvSVG, process.env.PUBLIC_URL + '/media/resume-weike-qu.pdf']
 }
 export default function IconButton({ type }) {
     return (
