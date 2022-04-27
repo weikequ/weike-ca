@@ -3,3 +3,5 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Marcellus&display=swap');
+
+* {border:1px solid red}
