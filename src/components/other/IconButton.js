@@ -14,7 +14,7 @@ export const iconType = {
     ghL: [ghLightSVG, 'https://github.com/weikequ'],
     cvL: [cvLightSVG, process.env.PUBLIC_URL + '/media/resume-weike-qu.pdf']
 }
-export default function IconButton({ type }) {
+export default function IconButton({ type, size }) {
     return (
         <a href={iconType[type][1]}>
             <img src={iconType[type][0]} alt={iconType[type][1]}/>
