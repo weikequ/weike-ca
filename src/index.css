@@ -5,3 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Marcellus&display=swap');
 
 /* * {border:1px solid red} */
+
+@layer base {
+  h1 {
+    @apply text-6xl;
+    @apply md:text-9xl;
+    @apply font-display;
+  }
+  h2 {
+    @apply text-5xl;
+    @apply font-display;
+  }
+}

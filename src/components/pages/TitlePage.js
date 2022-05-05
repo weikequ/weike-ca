@@ -7,7 +7,7 @@ export default function TitlePage() {
     return (
         <div className='h-screen flex flex-1 flex-col justify-between snap-center text-blue-900 bg-blue-50'>
             <div className='flex flex-1 flex-col justify-center gap-11'>
-                <h1 className="md:text-[128px] text-[90px] font-display flex justify-center">
+                <h1 className="flex justify-center">
                     weike qu
                 </h1>
                 <div className='flex flex-row justify-center gap-3'>
