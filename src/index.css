@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Marcellus&display=swap');
 
-/* * {border:1px solid red} */
+* {border:1px solid red}
 
 @layer base {
   h1 {
@@ -13,7 +13,19 @@
     @apply font-display;
   }
   h2 {
-    @apply text-5xl;
+    @apply text-4xl;
+    @apply text-center;
+    @apply md:text-left;
+    @apply md:text-6xl;
+    @apply 2xl:text-8xl;
     @apply font-display;
+  }
+  p {
+    @apply font-body;
+    @apply text-center;
+    @apply md:text-left;
+    @apply text-xs;
+    @apply sm:text-base;
+    @apply 2xl:text-xl;
   }
 }

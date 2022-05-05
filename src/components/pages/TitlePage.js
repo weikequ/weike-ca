@@ -18,7 +18,7 @@ export default function TitlePage() {
                 <div className='flex justify-center'>
                 <Scroll />
                 </div>
-                <p className="font-body flex justify-center">Let's work together</p>
+                <p className="flex justify-center">Let's work together</p>
             </div>
             <Waves />
         </div>

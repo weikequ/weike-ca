@@ -8,16 +8,16 @@ export default function AboutPage() {
     return (
         <div className='h-screen snap-center bg-blue-900 text-blue-50'>
             <Navbar />
-            <div className='md:flex'>
+            <div className='md:flex md:place-content-center pb-16'>
                 <div className='md:order-2 md:basis-full flex justify-center'>
-                    <img className='h-[40vh]' alt='Profile' src={profile} />
+                    <img className='h-[40vh] md:h-[80vh]' alt='Profile' src={profile} />
                 </div>
                 <div className='md:order-1 md:basis-full'>
-                    <div className=''>
-                        <h2 className="pb-10">
-                        Welcome! It's good to see you!
+                    <div className='p-3 sm:p-8 md:p-24 2xl:p-30 md:h-full flex flex-col justify-center'>
+                        <h2 className="py-4 sm:py-10">
+                            Welcome! It's good to see you!
                         </h2>
-                        <p className="font-body">
+                        <p>
                             My name is Weike (pronounced wake) and I am a passionately curious engineer.
                             <br />
                             <br />
