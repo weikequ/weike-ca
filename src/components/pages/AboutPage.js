@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../other/Navbar.js';
 import profile from '../../media/profile.svg'
 
 
@@ -7,8 +6,7 @@ export default function AboutPage() {
 
     return (
         <div className='h-screen snap-center bg-blue-900 text-blue-50'>
-            <Navbar />
-            <div className='md:flex md:place-content-center pb-16'>
+            <div className='md:flex md:place-content-center py-16'>
                 <div className='md:order-2 md:basis-full flex justify-center'>
                     <img className='h-[40vh] md:h-[80vh]' alt='Profile' src={profile} />
                 </div>
