@@ -29,3 +29,29 @@
     @apply 2xl:text-xl;
   }
 }
+
+@layer utilities {
+  .bg-ubc {
+    background-image: url('./media/ubc.jpg');
+  }
+  .bg-seabc {
+    background-image: url('./media/seabc.jpg');
+  }
+  .bg-cmolik {
+    background-image: url('./media/cmolik.jpg');
+  }
+  .bg-eq {
+    background-image: url('./media/eq.jpg');
+  }
+  .bg-ubc2 {
+    background-image: url('./media/ubc2.jpg');
+  }
+  .experience-tiles {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: all 0.8s ease;
+  }
+}
