@@ -9,7 +9,7 @@ export default function ExperiencePage() {
                 <h2 className="py-4 sm:py-10 text-center">
                     Experiences
                 </h2>
-                <div className='flex flex-row w-[70vw] h-[75vh] place-self-center'>
+                <div className='flex flex-row w-[70vw] h-[60vh] place-self-center'>
                     <ExpTile type='ubc' />
                     <ExpTile type='seabc' />
                     <ExpTile type='cmolik' />
