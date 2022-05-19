@@ -83,6 +83,7 @@
     transition: all 0.5s ease, background-color 0s linear;
   }
   .experience-tile-title-hover {
+    min-width: 100%;
     width: 100%;
     transform: rotate(0deg);
     transition: all 0.5s ease, background-color 0.4s ease 0.4s;

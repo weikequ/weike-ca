@@ -16,8 +16,6 @@ export default function ExpTile({ type }) {
             <p className='relative experience-tile-body group-hover:experience-tile-body-hover
                 bg-blue-900/0 group-hover:bg-blue-900/70'>
                 Duis ut id pariatur incididunt fugiat amet. Ullamco occaecat nisi est veniam aute mollit consectetur elit adipisicing eu reprehenderit. Proident deserunt sit amet enim. Excepteur consectetur velit sit consectetur ea ipsum labore voluptate aute anim do magna quis. Et sunt dolor do ex et incididunt laboris ullamco. Exercitation est qui esse nostrud nisi id dolore ad sit adipisicing esse consectetur non.
-                <br />
-                <br />
             </p>
             <p className='relative experience-tile-title bg-blue-900/0 group-hover:bg-blue-900/70
                 group-hover:experience-tile-title-hover'>
