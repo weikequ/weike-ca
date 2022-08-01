@@ -5,13 +5,13 @@ import profile from '../../media/profile.svg'
 export default function AboutPage() {
 
     return (
-        <div className='h-screen snap-center bg-blue-900 text-blue-50'>
-            <div className='md:flex md:place-content-center py-16'>
-                <div className='md:order-2 md:basis-full flex justify-center'>
+        <div className='about-page'>
+            <div className='container md:flex md:place-content-center py-16'>
+                <div className='img-col md:order-2 md:basis-full flex justify-center'>
                     <img className='h-[40vh] md:h-[80vh]' alt='Profile' src={profile} />
                 </div>
-                <div className='md:order-1 md:basis-full'>
-                    <div className='p-3 sm:p-8 md:p-24 2xl:p-30 md:h-full flex flex-col justify-center'>
+                <div className='text-col md:order-1 md:basis-full'>
+                    <div className='text-container p-3 sm:p-8 md:p-24 2xl:p-30 md:h-full flex flex-col justify-center'>
                         <h2 className="py-4 sm:py-10">
                             Welcome! It's good to see you!
                         </h2>

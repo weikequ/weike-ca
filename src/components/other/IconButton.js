@@ -15,10 +15,10 @@ export const iconType = {
     cvL: [cvLightSVG, process.env.PUBLIC_URL + '/media/resume-weike-qu.pdf']
 }
 
-export default function IconButton({ type, size }) {
+export default function IconButton({ type }) {
     return (
-        <a className={size} href={iconType[type][1]}>
-            <img className={size} src={iconType[type][0]} alt={iconType[type][1]}/>
-        </a>
+            <a href={iconType[type][1]}>
+                <img src={iconType[type][0]} alt={iconType[type][1]}/>
+            </a>
     )
 }

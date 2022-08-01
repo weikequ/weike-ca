@@ -4,7 +4,7 @@ import ExpTile from '../other/ExpTile';
 export default function ExperiencePage() {
 
     return (
-        <div className='h-screen snap-center bg-blue-900 text-blue-50'>
+        <div className='experience-page h-screen snap-center bg-blue-900 text-blue-50'>
             <div className='flex flex-col py-16'>
                 <h2 className="py-4 sm:py-10 text-center">
                     Experiences

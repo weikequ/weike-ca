@@ -1,0 +1,48 @@
+@use 'variables' as v
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Marcellus&display=swap')
+
+// *
+//     border: 1px solid red
+
+html
+    font-size: 16px
+    box-sizing: border-box
+
+*, *:before, *:after
+    box-sizing: inherit
+    margin: 0
+
+body
+
+h1
+    font-size: 3.75rem
+    line-height: 1
+    font-family: Marcellus
+    @media only screen and (min-width: v.$size-md)
+        font-size: 8rem
+
+h2  
+    font-size: 2.25rem
+    line-height: 2.5rem
+    text-align: center
+    font-family: Marcellus
+    @media only screen and (min-width: v.$size-md)
+        font-size: 3.75rem
+        text-align: left
+        line-height: 1
+    @media only screen and (min-width: v.$size-2xl)
+        font-size: 6rem
+
+p
+    font-size: 0.75rem
+    text-align: center
+    font-family: Lato
+    font-weight: 300
+    @media only screen and (min-width: v.$size-sm)
+        font-size: 1rem
+        line-height: 1.5
+    @media only screen and (min-width: v.$size-md)
+        text-align: left 
+    @media only screen and (min-width: v.$size-2xl)
+        font-size: 1.25rem
+        line-height: 1.75
