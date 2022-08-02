@@ -1,0 +1,9 @@
+@use '../variables' as v
+
+.wrapper
+    height: 100vh
+    --tw-scroll-snap-strictness: mandatory
+    scroll-snap-type: y var(--tw-scroll-snap-strictness)
+    overflow-y: scroll
+    color: v.$clr-main-light
+    background-color: v.$clr-main-dark

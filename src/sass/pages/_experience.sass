@@ -1,0 +1,26 @@
+@use '../variables' as v
+           
+.experience-page
+    height: 100vh
+    scroll-snap-align: center
+    padding-top: 3.5rem
+    @media only screen and (min-width: v.$size-md)
+        padding-top: 4rem
+
+    .container
+        display: flex
+        flex-direction: column
+    
+    h2
+        padding: 1rem 0
+        text-align: center
+        @media only screen and (min-width: v.$size-sm)
+            padding: 2.5rem 0
+    
+    .tile-container
+        display: flex
+        flex-direction: row
+        width: 70vw
+        height: 65vh
+        place-self: center
+ 

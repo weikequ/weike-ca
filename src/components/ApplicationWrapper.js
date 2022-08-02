@@ -8,7 +8,7 @@ import Navbar from './other/Navbar.js';
 export default function ApplicationWrapper() {
 
     return (
-        <div className='h-screen snap-mandatory snap-y overflow-y-scroll bg-blue-900'>
+        <div className='wrapper'>
             <TitlePage />
             <Navbar />
             <AboutPage />

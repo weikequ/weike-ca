@@ -4,14 +4,14 @@ import IconButton from '../other/IconButton.js'
 
 export default function Navbar() {
     return (
-            <div className='top-0 sticky h-14 md:h-16 flex flex-row p-4'>
-                <div className='basis-full flex flex-row justify-center'>
-                    <img className='h-full' alt='logo' src={nameUnderlined}></img>
+            <div className='navbar'>
+                <div>
+                    <img alt='logo' src={nameUnderlined}></img>
                 </div>
-                <div className='basis-full flex flex-row justify-center gap-3'>
-                        <IconButton size='h-full' type='liL' />
-                        <IconButton size='h-full' type='ghL' />
-                        <IconButton size='h-full' type='cvL' />
+                <div className='icon-container'>
+                        <IconButton type='liL' />
+                        <IconButton type='ghL' />
+                        <IconButton type='cvL' />
                 </div>
             </div>
     )

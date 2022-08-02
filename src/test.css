@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Marcellus&display=swap');
+
+/* * {border:1px solid red} */
+
+@layer base {
+  h1 {
+    @apply text-6xl;
+    @apply md:text-9xl;
+    @apply font-display;
+  }
+  h2 {
+    @apply text-4xl;
+    @apply text-center;
+    @apply md:text-left;
+    @apply md:text-6xl;
+    @apply 2xl:text-8xl;
+    @apply font-display;
+  }
+  p {
+    @apply font-body;
+    @apply font-light;
+    @apply text-center;
+    @apply md:text-left;
+    @apply text-xs;
+    @apply sm:text-base;
+    @apply 2xl:text-xl;
+  }
+}
+
+@layer utilities {
+  .bg-ubc {
+    background-image: url('./media/ubc.jpg');
+  }
+  .bg-seabc {
+    background-image: url('./media/seabc.jpg');
+  }
+  .bg-cmolik {
+    background-image: url('./media/cmolik.jpg');
+  }
+  .bg-eq {
+    background-image: url('./media/eq.jpg');
+  }
+  .bg-ubc2 {
+    background-image: url('./media/ubc2.jpg');
+  }
+  .experience-tile-container {
+    flex: 1;
+    position: relative;
+    height: 100%;
+
+    /* display: flex;
+    flex-direction: row;
+    align-items: flex-end; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    overflow: hidden;
+
+    transition: all 0.8s ease;
+  }
+  .experience-tile-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 30%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: all 0.8s ease;
+  }
+  .experience-tile-title {
+    padding-top: 1em;
+    padding-left: 1em;
+    min-width: 60vh;
+    text-align: left;
+    transform: rotate(-90deg) translatey(3em);
+    transform-origin: 0 100%;
+    transition: all 0.5s ease, background-color 0s linear;
+  }
+  .experience-tile-title-hover {
+    min-width: 100%;
+    width: 100%;
+    transform: rotate(0deg);
+    transition: all 0.5s ease, background-color 0.4s ease 0.8s;
+  }
+  .experience-tile-body {
+    padding-top: 1em;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    padding-left: 1em;
+    transition: all 0.5s ease, opacity 0s linear;
+  }
+  .experience-tile-body-hover {
+    width: 100%;
+    height: auto;
+    padding-left: 1em;
+    opacity: 1;
+    transition: all 0.5s ease, opacity 0.4s ease 0.8s;
+  }
+}
