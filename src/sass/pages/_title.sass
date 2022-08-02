@@ -1,0 +1,25 @@
+@use '../variables' as v
+
+.title-page
+    height: 100vh
+    scroll-snap-align: center
+
+    display: flex
+    flex-direction: column
+    color: v.$clr-main-dark
+    background-color: v.$clr-main-light
+
+    .container
+        display: flex
+        flex: 1 1 0%
+        flex-direction: column
+        justify-content: center
+        place-content: center
+        gap: 2.75rem
+
+        > *
+            display: flex
+            justify-content: center
+    
+    .icon-buttons
+        gap: 0.75rem

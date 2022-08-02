@@ -4,12 +4,12 @@ import ExpTile from '../other/ExpTile';
 export default function ExperiencePage() {
 
     return (
-        <div className='experience-page h-screen snap-center bg-blue-900 text-blue-50'>
-            <div className='flex flex-col py-16'>
-                <h2 className="py-4 sm:py-10 text-center">
+        <div className='experience-page'>
+            <div className='container'>
+                <h2>
                     Experiences
                 </h2>
-                <div className='flex flex-row w-[70vw] h-[60vh] place-self-center'>
+                <div className='tile-container'>
                     <ExpTile type='ubc' />
                     <ExpTile type='seabc' />
                     <ExpTile type='cmolik' />

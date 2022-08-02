@@ -13,16 +13,14 @@ export const tileType = {
 
 export default function ExpTile({ type }) {
     return (
-        <div className='group experience-tile-container hover:flex-[7]'>
-            <div className={'experience-tile-bg group-hover:opacity-80 ' + tileType[type][0]}>
+        <div className='exp-tile'>
+            <div className={'bg ' + tileType[type][0]}>
             </div>
-            <p className='relative experience-tile-body group-hover:experience-tile-body-hover
-                bg-blue-900/0 group-hover:bg-blue-900/70'>
+            <p className='body'>
                 {tileType[type][3]}
             </p>
-            <p className='relative experience-tile-title bg-blue-900/0 group-hover:bg-blue-900/70
-                group-hover:experience-tile-title-hover'>
-                <span className='font-bold'>{tileType[type][1]}</span><br/>
+            <p className='title'>
+                <span>{tileType[type][1]}</span><br/>
                 {tileType[type][2]} <br/>
             </p>
         </div>

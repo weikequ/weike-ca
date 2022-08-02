@@ -179,6 +179,26 @@ p {
     padding-top: 4rem;
   }
 }
+.experience-page .container {
+  display: flex;
+  flex-direction: column;
+}
+.experience-page h2 {
+  padding: 1rem 0;
+  text-align: center;
+}
+@media only screen and (min-width: 600px) {
+  .experience-page h2 {
+    padding: 2.5rem 0;
+  }
+}
+.experience-page .tile-container {
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  height: 65vh;
+  place-self: center;
+}
 
 .projects-page {
   height: 100vh;
@@ -189,6 +209,92 @@ p {
   .projects-page {
     padding-top: 4rem;
   }
+}
+
+.exp-tile {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  transition: all 0.8s ease;
+}
+.exp-tile:hover {
+  flex: 7;
+}
+.exp-tile:hover .bg {
+  opacity: 80%;
+}
+.exp-tile:hover .body {
+  width: 100%;
+  height: auto;
+  padding-left: 1em;
+  opacity: 1;
+  background-color: rgba(4, 53, 64, 0.6666666667);
+  transition: all 0.5s ease, opacity 0.4s ease 0.8s;
+}
+.exp-tile:hover .title {
+  min-width: 100%;
+  width: 100%;
+  transform: rotate(0deg);
+  background-color: rgba(4, 53, 64, 0.6666666667);
+  transition: all 0.5s ease, background-color 0.4s ease 0.8s;
+}
+.exp-tile .bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 30%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: all 0.8s ease;
+}
+.exp-tile .title {
+  position: relative;
+  padding-top: 1em;
+  padding-left: 1em;
+  min-width: 60vh;
+  text-align: left;
+  transform: rotate(-90deg) translatey(3em);
+  transform-origin: 0 100%;
+  transition: all 0.5s ease, background-color 0s linear;
+  background-color: transparent;
+}
+.exp-tile .title span {
+  font-weight: 700;
+}
+.exp-tile .body {
+  position: relative;
+  padding-top: 1em;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  padding-left: 1em;
+  transition: all 0.5s ease, opacity 0s linear;
+  background-color: transparent;
+}
+
+.bg-ubc {
+  background-image: url("../media/ubc.jpg");
+}
+
+.bg-seabc {
+  background-image: url("../media/seabc.jpg");
+}
+
+.bg-cmolik {
+  background-image: url("../media/cmolik.jpg");
+}
+
+.bg-eq {
+  background-image: url("../media/eq.jpg");
+}
+
+.bg-ubc2 {
+  background-image: url("../media/ubc2.jpg");
 }
 
 .navbar {

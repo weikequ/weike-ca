@@ -1,0 +1,77 @@
+@use '../variables' as v
+
+.exp-tile   
+    flex: 1
+    position: relative
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    overflow: hidden
+    transition: all 0.8s ease
+    &:hover
+        flex: 7
+        .bg
+            opacity: 80%
+        .body
+            width: 100%
+            height: auto
+            padding-left: 1em
+            opacity: 1
+            background-color: v.$clr-main-dark-transp
+            transition: all 0.5s ease, opacity 0.4s ease 0.8s
+        .title
+            min-width: 100%
+            width: 100%
+            transform: rotate(0deg)
+            background-color: v.$clr-main-dark-transp
+            transition: all 0.5s ease, background-color 0.4s ease 0.8s
+
+    .bg
+        position: absolute
+        height: 100%
+        width: 100%
+        opacity: 30%
+        background-position: center
+        background-size: cover
+        background-repeat: none
+        transition: all 0.8s ease
+
+    .title
+        position: relative
+        padding-top: 1em
+        padding-left: 1em
+        min-width: 60vh
+        text-align: left
+        transform: rotate(-90deg) translatey(3em)
+        transform-origin: 0 100%
+        transition: all 0.5s ease, background-color 0s linear
+        background-color: transparent
+        span
+            font-weight: 700
+
+    .body
+        position: relative
+        padding-top: 1em
+        width: 0%
+        height: 0%
+        opacity: 0
+        padding-left: 1em
+        transition: all 0.5s ease, opacity 0s linear
+        background-color: transparent 
+            
+.bg-ubc
+    background-image: url('../media/ubc.jpg')
+  
+.bg-seabc 
+    background-image: url('../media/seabc.jpg')
+  
+.bg-cmolik 
+    background-image: url('../media/cmolik.jpg')
+  
+.bg-eq 
+    background-image: url('../media/eq.jpg')
+  
+.bg-ubc2 
+    background-image: url('../media/ubc2.jpg')
+  

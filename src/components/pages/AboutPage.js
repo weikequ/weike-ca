@@ -6,13 +6,13 @@ export default function AboutPage() {
 
     return (
         <div className='about-page'>
-            <div className='container md:flex md:place-content-center py-16'>
-                <div className='img-col md:order-2 md:basis-full flex justify-center'>
-                    <img className='h-[40vh] md:h-[80vh]' alt='Profile' src={profile} />
+            <div className='container'>
+                <div className='img-col'>
+                    <img alt='Profile' src={profile} />
                 </div>
-                <div className='text-col md:order-1 md:basis-full'>
-                    <div className='text-container p-3 sm:p-8 md:p-24 2xl:p-30 md:h-full flex flex-col justify-center'>
-                        <h2 className="py-4 sm:py-10">
+                <div className='text-col'>
+                    <div className='text-container'>
+                        <h2>
                             Welcome! It's good to see you!
                         </h2>
                         <p>
