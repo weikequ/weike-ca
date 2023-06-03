@@ -18,7 +18,7 @@ export const iconType = {
 export default function IconButton({ type }) {
     return (
             <a href={iconType[type][1]}>
-                <img src={iconType[type][0]} alt={iconType[type][1]}/>
+                <img width="32px" height="32px" src={iconType[type][0]} alt={iconType[type][1]}/>
             </a>
     )
 }
